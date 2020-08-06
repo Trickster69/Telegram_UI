@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/favicon.png" type="img/favicon.png" />
     <title>Telegram Web</title>
   </head>
 
@@ -11,24 +12,42 @@
     <div class="container">
       <header class="header">
         <div class="header_tg">
-          <div class="burger">_</div>
+          <div class="burger">
+            <span class="icon_menu"></span>
+          </div>
           <div class="logo">Telegram</div>
         </div>
         <div class="header_name">
           <div class="h_name">Rick</div>
           <div class="h_time">last seen recently</div>
         </div>
-        <div class="header_search">поиск</div>
-        <div class="header_menu">...</div>
+        <div class="header_search"><img src="img/search.png " alt="" /></div>
+        <div class="header_menu"><img src="img/3dots.png" alt="" /></div>
       </header>
 
       <div class="content">
         <div class="contacts">
-          <div class="search">search</div>
-          <div class="people">people</div>
+          <div class="search">
+            <input type="search" />
+          </div>
+          <div class="people">
+            <div class="human first">
+              <div class="avatar af"><img src="img/ava1.jpg" alt="" /></div>
+              <div class="name nf">Rick</div>
+              <div class="message mf">Lorem Ipsum is simply...</div>
+              <div class="date df">10/23/19</div>
+            </div>
+            <div class="human second">
+              <div class="avatar"><img src="img/ava2.jpg" alt="" /></div>
+              <div class="name"><span class="spnamef">Areondo</span></div>
+              <div class="message ms">Lorem Ipsum is simply...</div>
+              <div class="date">9/23/19</div>
+            </div>
+          </div>
         </div>
         <div class="chat">chat</div>
       </div>
     </div>
+    <!--<script src="script.js"></script> -->
   </body>
 </html>
