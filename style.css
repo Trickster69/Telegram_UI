@@ -55,11 +55,6 @@ body {
   background-color: #fff;
   top: 6px;
 }
-.burger:hover {
-  background-color: black;
-  margin-top: 50px;
-  margin-bottom: 5px;
-}
 
 .header_tg {
   display: flex;
@@ -130,6 +125,26 @@ body {
 /* HEADER */
 
 /* CONTACTS */
+.people {
+  height: 750px;
+  overflow-y: hidden;
+  margin-right: -2px;
+  border-right: 2px solid #e9ebed;
+}
+::-webkit-scrollbar {
+  width: 2px;
+}
+::-webkit-scrollbar-thumb {
+  border-width: 1px 1px 1px 2px;
+  border-color: #adbfcc;
+  background-color: #aaa;
+}
+
+.people:hover {
+  margin-right: -4px;
+  overflow-y: auto;
+}
+
 .content {
   display: flex;
   height: 809px;
@@ -193,7 +208,7 @@ body {
   position: absolute;
   top: 10px;
   right: 15px;
-  font-size: 11px;
+  font-size: 0.85em;
 }
 
 .first {
@@ -205,13 +220,51 @@ body {
 }
 .second {
   background-color: #fff;
-  color: gray;
+  color: #b3abab;
 }
+
 .second:hover {
   background: #f2f6fa;
   color: #6490b1;
 }
+.countmes {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  background-color: #64c270;
+  border-radius: 50%;
+  color: white;
+  padding: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-weight: bold;
+  font-size: 12px;
+}
 
+.cmt {
+  position: absolute;
+  bottom: 7px;
+  right: 15px;
+}
+
+.ms span {
+  color: #4d7ea8;
+}
+.unread {
+  position: absolute;
+  bottom: 14px;
+  right: 15px;
+
+  font-size: 25px;
+}
+
+.cm3 {
+  border-radius: 38%;
+}
+.cmgray {
+  border-radius: 38%;
+  background-color: #bfbfbf;
+}
 /* CONTACTS */
 
 .chat {
