@@ -7,14 +7,11 @@ body {
 
 .container {
   width: 1008px;
-
-  /* background-color: black; */
   margin: 0 auto;
 }
 
 /* HEADER */
 .header {
-  /* font-size: 14px; */
   background-color: #5682a3;
   height: 50px;
   display: flex;
@@ -30,14 +27,14 @@ body {
   height: 14px;
 }
 
-.icon_menu {
+.icon_burger {
   position: relative;
   width: 18px;
   height: 2px;
   background-color: #fff;
 }
 
-.icon_menu::before {
+.icon_burger::before {
   position: absolute;
   content: "";
   display: block;
@@ -47,7 +44,7 @@ body {
   top: -6px;
 }
 
-.icon_menu::after {
+.icon_burger::after {
   position: absolute;
   content: "";
   display: block;
@@ -57,15 +54,15 @@ body {
   top: 6px;
 }
 
-.header_tg:hover .icon_menu::before {
+.header_burger_logo:hover .icon_burger::before {
   top: -7px;
 }
 
-.header_tg:hover .icon_menu::after {
+.header_burger_logo:hover .icon_burger::after {
   top: 7px;
 }
 
-.header_tg {
+.header_burger_logo {
   display: flex;
   align-items: center;
   width: 318px;
@@ -78,11 +75,11 @@ body {
   font-size: 14px;
 }
 
-.header_tg:hover {
+.header_burger_logo:hover {
   background-color: #497799;
 }
 
-.header_name {
+.header_person_name {
   display: flex;
   width: 595px;
   color: #cad8e2;
@@ -105,7 +102,7 @@ body {
   color: white;
 }
 
-.header_name:hover {
+.header_person_name:hover {
   background-color: #497799;
   color: white;
 }
@@ -124,21 +121,21 @@ body {
   background-color: #497799;
 }
 
-.header_menu {
+.header_dots_menu {
   display: flex;
   align-items: center;
   width: 50px;
 }
 
-.header_menu img {
+.header_dots_menu img {
   margin-left: 17px;
 }
 
-.header_menu:hover {
+.header_dots_menu:hover {
   background-color: #497799;
 }
 
-/* HEADER */
+/* /HEADER */
 
 /* CONTACTS */
 .people {
@@ -225,7 +222,7 @@ body {
   cursor: text;
 }
 
-/* SEARCH */
+/* /SEARCH */
 
 .human {
   position: relative;
@@ -260,7 +257,6 @@ body {
   position: absolute;
   bottom: 10px;
   left: 80px;
-  /* color: #d4d4d4; */
 }
 
 .date {
@@ -270,7 +266,7 @@ body {
   font-size: 0.85em;
 }
 
-.first {
+.first_variant {
   background-color: #6490b1;
   color: white;
 }
@@ -279,12 +275,12 @@ body {
   color: black;
 }
 
-.second {
+.second_variant {
   background-color: #fff;
   color: #b3abab;
 }
 
-.second:hover {
+.second_variant:hover {
   background: #f2f6fa;
   color: #6490b1;
 }
@@ -330,25 +326,23 @@ body {
   background-color: #bfbfbf;
 }
 
-/* CONTACTS */
+/* /CONTACTS */
 
-/* CHAAT */
+/* CHAT */
 .chat {
   position: relative;
   width: 100%;
   height: 866px;
   background-color: white;
-  /* cursor: pointer; */
 }
 
 .send_form {
   position: absolute;
   width: 524px;
   height: 97px;
-  /* background-color: blanchedalmond; */
   left: 66px;
   margin: 10px 15px 21px 15px;
-  bottom: 0;
+  bottom: 8px;
 }
 
 .ava img {
@@ -361,11 +355,11 @@ body {
 .ava:hover {
   cursor: pointer;
 }
-.myava {
+.my_ava {
   left: 0;
 }
 
-.yourava {
+.your_ava {
   right: 0;
 }
 
@@ -392,11 +386,6 @@ body {
 .fa:active {
   color: rgb(66, 153, 224);
 }
-
-/* .gray_btns img {
-  margin-top: 3px;
-  margin-right: 18px;
-} */
 
 .smile_bar img {
   margin-top: 4px;
@@ -425,14 +414,17 @@ body {
 
 .message_block {
   top: 10px;
-  /* background-color: red; */
   position: absolute;
   left: 75px;
   width: 380px;
   height: 52px;
   padding-bottom: 4px;
-  border-bottom: 2px solid #3a8dc6;
+  border-bottom: 1px solid #e8e8e8;
   cursor: text;
+}
+
+.send_form:hover .message_block {
+  border-bottom: 2px solid #3a8dc6;
 }
 
 .message_block textarea {
@@ -468,16 +460,6 @@ body {
   background-repeat: no-repeat;
 }
 
-/* .message_block img {
-  position: absolute;
-  top: 2px;
-  right: 8px;
-}
-
-.message_block img:hover {
-  background: url(img/smilebtn2.png);
-} */
-
 /* MESSAGES */
 .chat_block {
   margin-right: 8px;
@@ -485,8 +467,6 @@ body {
   top: 0;
   width: 686.86px;
   height: 740px;
-  /* background-color: burlywood; */
-
   overflow-y: auto;
 }
 .chat_block::-webkit-scrollbar {
@@ -595,5 +575,5 @@ body {
   margin-bottom: 50px;
 }
 
-/* MESSAGES */
-/* CHAAT */
+/* /MESSAGES */
+/* /CHAAT */
